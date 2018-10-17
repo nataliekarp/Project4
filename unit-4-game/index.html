@@ -17,67 +17,57 @@
     <div class="jumbotron jumbotron-fluid">
             <div class="container">
               <h1 class="display-4">Star Wars Game RPG!</h1>
-              <p class="lead">Make a fight!</p>
+              <p class="lead">HP: Heat Points, AP: Attack points, CAP: Counter-Attack Points</p>
             </div>
           </div>
 
     <div class="container">
-            <div id="obiwanKenobi" class="card" style="width: 180rem;">
+        <div class="row">
+        <!-- <div class="card-columns d-flex justify-content-center"> -->
+            <div class="col-md-3">
+            <div id="obiwanKenobi" class="col-md-4" style="width: 180rem;">
                     <img class="card-img-top" src="assets/images/obiwan.jpeg" alt="Obi-Wan Kenobi">
                     <div class="card-body">
                       <p id="obiwanKenobi.state">TEXT</p>
                     </div>
             </div>
+        </div>
             <br>
-            <div id="lukeSkywalker" class="card" style="width: 180rem;">
+            <div class="col-md-3"></div>
+            <div id="lukeSkywalker" class="col-md-4" style="width: 180rem;">
                     <img class="card-img-top" src="assets/images/luke.jpeg" alt="Luke Skywalker">
                     <div class="card-body">
                       <p id="lukeSkywalker.state">TEXT</p>
                     </div>
             </div>
+        </div>
             <br>
-            <div id="darthSidius" class="card" style="width: 180rem;">
+            <div id="darthSidius" class="col-md-4" style="width: 180rem;">
                     <img class="card-img-top" src="assets/images/darthsidius.jpeg" alt="Darth Sidius">
                     <div class="card-body">
                       <p id="darthSidius.state">TEXT</p>
                     </div>
             </div>
             <br>
-            <div id="darthVader" class="card" style="width: 180rem;">
+            <div id="darthVader" class="col-md-4" style="width: 180rem;">
                     <img class="card-img-top" src="assets/images/darthvader.jpeg" alt="Darth Vader">
                     <div class="card-body">
                       <p id="darthVader.state">TEXT</p>
                     </div>
             </div>
+        <!-- </div> -->
+        </div>
+            <h2>Fight field</h2>
             <div class="field">
-                <div id="attack">Attack</div>
+                <button id="attack" type="button" class="btn btn-secondary btn-lg">Attack</button>
                 <div id="attack_report"></div>
                 <div id="counter_attack_report"></div>
             </div>
-            <br><br>
-    </div>    
-    
-    <div class = "container">
-        <h2>Fight field</h2>
-
-        <br>
 
         <div></div>
-        <span>Enemies Avaliable to Attack</span>
-        <br><br>
-        <span>Fight Selection</span>
-        <br>
-        <button id="attack" type="button" class="btn btn-secondary btn-lg">Attack</button>
-        <br>
-        <div></div>
-
-        <span>Defender</span>
-        <br>
-
-        <div></div>
-
+        <!-- <span>Enemies Avaliable to Attack</span> -->
+        <!-- <span>Defender</span> -->
     </div>
     <script>startGame();</script>
 </body>
-
 </html>
